@@ -1,0 +1,31 @@
+name: plexmediaserver
+version: 1.5.5.3634-995f1dead
+summary: Unofficial snap for the Plex media server
+architectures: [armhf]
+description: |
+  Plex organizes all of your personal media so you can easily
+  access and enjoy it. See https://www.plex.tv/
+confinement: devmode
+grade: devel
+
+apps:
+  server:
+    command: bin/server.sh
+    daemon: simple
+    plugs:
+      - home
+      - log-observe
+      - mount-observe
+      - network-bind
+      - network
+      - removable-media
+
+parts:
+  common:
+    plugin: dump
+    source: bin
+    organize:
+      server.sh: bin/server.sh
+  plexmediaserver:
+    plugin: make
+    source: .
