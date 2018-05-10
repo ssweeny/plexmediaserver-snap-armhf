@@ -29,3 +29,4 @@ parts:
   plexmediaserver:
     plugin: make
     source: .
+    build-packages: [wget]
