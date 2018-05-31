@@ -1,5 +1,5 @@
 name: plexmediaserver
-version: 1.13.0.5023-31d3c0c65
+version: 1.13.2.5102-4898d7d96
 summary: Unofficial snap for the Plex media server
 architectures: [armhf]
 description: |
@@ -30,3 +30,4 @@ parts:
     plugin: make
     source: .
     build-packages: [wget]
+    stage-packages: [libicu55]
