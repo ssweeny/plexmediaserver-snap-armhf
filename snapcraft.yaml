@@ -31,3 +31,6 @@ parts:
     source: .
     build-packages: [wget]
     stage-packages: [libicu55]
+  snapcraft-preload:
+   source: https://github.com/sergiusens/snapcraft-preload.git
+   plugin: cmake

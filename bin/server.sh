@@ -27,4 +27,4 @@ export LC_ALL=C
 # Stop those pesky OOMs
 ulimit -s $PLEX_MEDIA_SERVER_MAX_STACK_SIZE
 
-exec $SNAP/usr/lib/plexmediaserver/Plex\ Media\ Server
+exec snapcraft-preload $SNAP/usr/lib/plexmediaserver/Plex\ Media\ Server
