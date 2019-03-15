@@ -1,5 +1,5 @@
 name: plexmediaserver
-version: 1.13.9.5456-ecd600442
+version: 1.15.2.793-782228f99
 summary: Unofficial snap for the Plex media server
 architectures: [armhf]
 description: |
@@ -27,10 +27,10 @@ parts:
     organize:
       server.sh: bin/server.sh
   plexmediaserver:
-    plugin: make
-    source: .
-    build-packages: [wget]
+    plugin: dump
+    source: https://downloads.plex.tv/plex-media-server-new/${SNAPCRAFT_PROJECT_VERSION}/debian/plexmediaserver_${SNAPCRAFT_PROJECT_VERSION}_armhf.deb
     stage-packages: [libicu55]
   snapcraft-preload:
    source: https://github.com/sergiusens/snapcraft-preload.git
+   build-packages: [build-essential]
    plugin: cmake
