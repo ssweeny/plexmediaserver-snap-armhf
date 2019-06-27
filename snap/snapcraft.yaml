@@ -6,6 +6,7 @@ description: |
   access and enjoy it. See https://www.plex.tv/
 confinement: devmode
 grade: devel
+base: core18
 
 architectures:
     - build-on:
