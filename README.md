@@ -1,6 +1,8 @@
 # plexmediaserver-snap-armhf
 Snap package of Plex Media Server for armhf devices
 
+[![Snap Status](https://build.snapcraft.io/badge/ssweeny/plexmediaserver-snap-armhf.svg)](https://build.snapcraft.io/user/ssweeny/plexmediaserver-snap-armhf)
+
 ## Build
 To build, you will need an Ubuntu machine with the [snapcraft](https://snapcraft.io/) tool installed. Make sure you have it with:
 
