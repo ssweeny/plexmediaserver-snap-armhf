@@ -1,0 +1,10 @@
+build:snap:
+  stage: build
+  image: snapcore/snapcraft
+  before_script:
+    - apt-get update
+  script: snapcraft
+  allow_failure: true
+  artifacts:
+    paths: ['./*.snap']
+    expire_in: 3 days
